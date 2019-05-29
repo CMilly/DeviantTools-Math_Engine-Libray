@@ -37,6 +37,8 @@ Global headers allow for the use of one header having to be included. This is do
     
     #include <vd1m/ext/Mat3_scale> //3-D scaling Matrix
     #include <vd1m/ext/Mat4_scale> //4-D scaling Matrix
+    ```
 
+!It should be noted that these implementations are subject to change and are not final!
 
 
