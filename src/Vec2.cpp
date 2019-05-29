@@ -144,9 +144,7 @@ vd1m::Vec2& vd1m::Vec2::operator/=(const float &k) {
  * @return float(scalar)
  */
 float vd1m::Vec2::dotp(const vd1m::Vec2 &v2) {
-    float scalar_product;
-    scalar_product = (x * v2.x) + (y * v2.y);
-    return scalar_product;
+    return (x * v2.x) + (y * v2.y);
 }
 
 /**
@@ -168,9 +166,8 @@ float vd1m::Vec2::magnitude() {
  * This helps describes the Vector's direction without regard to the length
  */
 void vd1m::Vec2::normalize() {
-    float mag_fraction = 1.0f/magnitude();
-    x = x * mag_fraction;
-    y = y * mag_fraction;
+    x = x / magnitude();
+    y = y / magnitude();
 }
 
 void vd1m::Vec2::to_string() {
