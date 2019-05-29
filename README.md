@@ -1,3 +1,6 @@
+# Overview
+In my study to understand the basics of computer graphics and game development, I came across a general consensus about the order in which projects for understanding should be tackled. It was almost unanimously that people would say to understand and grasp the fundamentals, it is important to first start with the understanding of how the math works. This being said, the importance of starting with developing a math engine will allow for an understanding between the rendering, physics and other engines inlcuded in an all in one game engine. The way I went about to develop this math engine came from the inspiration of OpenGL's math library and how their system was organized, as I felt that for a beginner like me, It would be an easier basis to understand
+
 # Setup
 To get started vDefiant Math Engine is a header driven ME. To utilize the math library all that is needed are the proper header files on what is wanted. The headers are specifically in a file called vd1m and can be included via ```<vd1m/..>```. More specifically are examples given below of both global definition headers as well as explicit headers:
 
