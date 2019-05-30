@@ -1,11 +1,13 @@
 #include <iostream>
-#include <vd1m/Vec3.hpp>
-#include <vd1m/ext/Mat3_scale.hpp>
+#include <vd1m/Vec2.hpp>
+#include <vd1m/ext/Mat2_rotclock.hpp>
+using namespace std;
 int main() {
-    vd1m::Mat3_scale mat3s(1,2,3);
-    vd1m::Vec3 vec3(1,1,1);
-    vec3.to_string();
-    vd1m::Vec3 vect;
-    vect = mat3s * vec3;
-    vect.to_string();
+    vd1m::Mat2_rotclock mat2_rotc(90.0f);
+    vd1m::Vec2 vec2(0,0);
+    vd1m::Vec2 vec2_rot;
+    vec2.to_string();
+    cout << "\n" << endl;
+    vec2_rot = mat2_rotc * vec2;
+    vec2_rot.to_string();
 }

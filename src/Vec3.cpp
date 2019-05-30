@@ -214,7 +214,7 @@ vd1m::Vec3 vd1m::Vec3::crossp(const vd1m::Vec3 &v2) {
 }
 
 /**
- * Calculate (and Return) the magnitude of this Vector
+ * Calculate (and Return) the magnitude (length) of this Vector
  * Def: Magnitude - Size and or Distance of Vector
  * @return float(magnitude)
  */
@@ -228,10 +228,7 @@ float vd1m::Vec3::magnitude() {
  * This helps describes the Vector's direction without regard to the length
  */
 void vd1m::Vec3::normalize() {
-    float mag_fraction = 1.0f/magnitude();
-    x = x * mag_fraction;
-    y = y * mag_fraction;
-    z = z * mag_fraction;
+    (*this) / magnitude();
 }
 
 void vd1m::Vec3::to_string() {

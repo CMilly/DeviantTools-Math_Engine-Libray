@@ -177,7 +177,7 @@ vd1m::Vec2 vd1m::Mat2::operator*(const vd1m::Vec2 &v) {
     vd1m::Vec2 temp_vec2;
 
     temp_vec2.x = (matrix2[0] * v.x) + (matrix2[1] * v.y);
-    temp_vec2.y = (matrix2[2] * v.x) + (matrix2[3] * v.x);
+    temp_vec2.y = (matrix2[2] * v.x) + (matrix2[3] * v.y);
 
     return temp_vec2;
 }

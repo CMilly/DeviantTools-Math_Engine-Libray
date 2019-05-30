@@ -152,7 +152,7 @@ float vd1m::Vec2::dotp(const vd1m::Vec2 &v2) {
  */
 
 /**
- * Calculate (and Return) the magnitude of this Vector
+ * Calculate (and Return) the magnitude (length) of this Vector
  * Def: Magnitude - Size and or Distance of Vector
  * @return float(magnitude)
  */
@@ -166,8 +166,9 @@ float vd1m::Vec2::magnitude() {
  * This helps describes the Vector's direction without regard to the length
  */
 void vd1m::Vec2::normalize() {
-    x = x / magnitude();
-    y = y / magnitude();
+    //x = x / magnitude();
+    //y = y / magnitude();
+    (*this) / magnitude();
 }
 
 void vd1m::Vec2::to_string() {
