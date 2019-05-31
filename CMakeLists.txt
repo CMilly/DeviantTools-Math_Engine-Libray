@@ -15,4 +15,4 @@ add_executable(vDefiant1_Math_Engine src/main.cpp
         vd1m/vd1m/Quat.hpp src/Quat.cpp
         vd1m/vd1m/vd1m.hpp
         vd1m/vd1m/ext/Mat3_scale.hpp
-        src/ext/Mat3_scale.cpp vd1m/vd1m/ext/Mat4_scale.hpp src/ext/Mat4_scale.cpp vd1m/vd1m/ext/Vec3_euler.hpp src/ext/Vec3_euler.cpp vd1m/vd1m/ext/Mat2_rotclock.hpp src/ext/Mat2_rotclock.cpp vd1m/vd1m/ext/Mat2_rotcounterc.hpp src/ext/Mat2_rotcounterc.cpp)
+        src/ext/Mat3_scale.cpp vd1m/vd1m/ext/Mat4_scale.hpp src/ext/Mat4_scale.cpp vd1m/vd1m/ext/Vec3_euler.hpp src/ext/Vec3_euler.cpp vd1m/vd1m/ext/Mat2_rotclock.hpp src/ext/Mat2_rotclock.cpp vd1m/vd1m/ext/Mat2_rotcounterc.hpp src/ext/Mat2_rotcounterc.cpp vd1m/vd1m/ext/Mat3_rotX.hpp src/ext/Mat3_rotX.cpp)
